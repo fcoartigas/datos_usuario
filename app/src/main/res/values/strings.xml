@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Screen Title</string>
+    <string name="nombre_hit">Nombre completo</string>
+    <string name="telefono_hit">Telefono</string>
+    <string name="email_hit">Email</string>
+    <string name="descripcion_hit">Descripción Contato</string>
+
+    <string name="picker_titulo_set">Set date</string>
+    <string name="picker_titulo_fecha">Fecha Nascimiento</string>
+    <string name="picker_button_cancel">Cancel</string>
+    <string name="picker_button_ok">OK</string>
+
+    <string name="button_siguinte">Siguiente</string>
+
+    <string name="texto_confirmar">Confirmar Datos</string>
+    <string name="texto_fecha">Fecha Nascimineto:</string>
+    <string name="texto_tel">Tel. </string>
+    <string name="texto_email">Email:</string>
+    <string name="texto_descripcion">Descripción:</string>
+
+    <string name="button_editar">Editar Datos</string>
+
+    <string name="pnombre">nombre</string>
+    <string name="ptelefono">telefono</string>
+    <string name="pemail">email</string>
+
+    <string name="default_nombre">Lorena Fernandez Lopez</string>
+    <string name="default_nombre_error_msg">Nombre hay que ser menor que 30 digitos</string>
+    <string name="default_telefono">55553333</string>
+    <string name="default_email">lorena@gmail.com</string>
+    <string name="default_description">Conocí a Lorena en el Restaurant de comida italiana</string>
+
+    <string name="carga_default">Loaded valores defaults</string>
+
+</resources>

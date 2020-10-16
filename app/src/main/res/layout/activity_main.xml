@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlCompat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/top_pading">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_pading_text"
+                    android:hint="@string/nombre_hit"
+                    android:textSize="@dimen/text_input"
+                    android:textStyle="italic"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_marginTop="@dimen/top_pading"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="@dimen/picker_header_width"
+                android:layout_height="@dimen/picker_header_height"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                 android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txtpckSetDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/top_pading_text"
+                    android:paddingRight="@dimen/top_pading_text"
+                    android:text="@string/picker_titulo_set"
+                    android:textSize="@dimen/picker_titulo"
+                    android:textStyle="italic">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtpckSaveDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/top_pading_text"
+                    android:paddingRight="@dimen/top_pading_text"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/picker_titulo"
+                    android:textStyle="italic">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtpckFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/picker_titulo_fecha"
+                    android:textSize="@dimen/picker_titulo"
+                    android:textStyle="italic">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <DatePicker
+                    android:id="@+id/pckFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/picker_body"
+                    android:layout_gravity="center_horizontal"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/picker_header_height"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_Cancel"
+                    style="@android:style/Widget.Material.Light.Button"
+                    android:background="@drawable/border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/picker_button_cancel"
+                    tools:targetApi="lollipop" />
+
+                <Button
+                    android:id="@+id/btn_Ok"
+                    style="@android:style/Widget.Material.Light.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:text="@string/picker_button_ok"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/top_pading">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/top_pading_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/telefono_hit"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/text_input"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/top_pading">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/top_pading_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hit"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/text_input"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/top_pading">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/top_pading_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/descripcion_hit"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/text_input"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_siguinte"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

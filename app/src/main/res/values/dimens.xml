@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+    <dimen name="top_pading">2dp</dimen>
+    <dimen name="left_pading">2dp</dimen>
+    <dimen name="top_pading_text">2dp</dimen>
+    <dimen name="text_input">12sp</dimen>
+    <dimen name="picker_header_width">300sp</dimen>
+    <dimen name="picker_header_height">30sp</dimen>
+    <dimen name="picker_titulo">12sp</dimen>
+    <dimen name="picker_body">130sp</dimen>
+    <dimen name="text_show_header">40sp</dimen>
+    <dimen name="text_show">15sp</dimen>
+    <dimen name="boton_pading">50dp</dimen>
+</resources>
